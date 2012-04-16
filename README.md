@@ -15,7 +15,7 @@ if you're on Lion (OS X 10.7).
 
 Run the script:
 
-    bash < <(curl -s https://raw.github.com/molawson/laptop/master/mac)
+    curl -Os https://raw.github.com/molawson/laptop/master/mac ; bash mac
 
 What it sets up
 ---------------
