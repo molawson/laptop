@@ -2,8 +2,6 @@
 
 read -p "Is this computer running OSX Lion (10.7)? [y/n] " lion
 
-read -p "Do you want this script to add lines to your .bash_profile? [y/n] " profile
-
 echo "Checking for SSH key, generating one if it doesn't exist ..."
   [[ -f ~/.ssh/id_rsa.pub ]] || ssh-keygen -t rsa
 
@@ -15,13 +13,11 @@ echo "Installing Homebrew, a good OS X package manager ..."
   /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
   brew update
 
-if [ $profile == "Y" -o $profile == "y" ] ; then
-  echo "Put Homebrew location earlier in PATH ..."
-    echo "
-  # recommended by brew doctor
-  export PATH='/usr/local/bin:$PATH'" >> ~/.bash_profile
-    source ~/.bash_profile
-fi
+echo "Put Homebrew location earlier in PATH ..."
+  echo "
+# recommended by brew doctor
+export PATH='/usr/local/bin:$PATH'" >> ~/.bash_profile
+  source ~/.bash_profile
 
 echo "Installing Git, a good version control system ..."
   brew install git
@@ -51,25 +47,23 @@ echo "Installing ImageMagick, good for cropping and re-sizing images ..."
   brew install imagemagick
 
 echo "Installing QT, used by Capybara Webkit for headless Javascript integration testing ..."
- brew install qt
+  brew install qt
 
 echo "Installing Node.js, a good platform for event-driven applications using server side javascript ..."
- brew install node
+  brew install node
 
 echo "Installing ssh-copy-id, good for copying your ssh key to servers ..."
- brew install ssh-copy-id
+  brew install ssh-copy-id
 
 echo "Installing rbenv, a good ruby version manager ..."
- brew install rbenv
+  brew install rbenv
 
-if [ $profile == "Y" -o $profile == "y" ] ; then
-  echo "Put rbenv in PATH and rbenv init in shell ..."
-   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-   echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-fi
+echo "Put rbenv in PATH and rbenv init in shell ..."
+  echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+  echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 
 echo "Installing ruby-build, good for automating ruby installs alongside rbenv ..."
- brew install ruby-build
+  brew install ruby-build
 
 curl -Os https://raw.github.com/molawson/laptop/master/ruby ; bash ruby
 curl -Os https://raw.github.com/molawson/laptop/master/heroku ; bash heroku
