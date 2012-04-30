@@ -23,3 +23,5 @@ echo "Installing the pg gem to talk to Postgres databases ..."
 
 echo "Installing the git_remote_branch gem for fast feature branch creating and deleting ..."
   gem install git_remote_branch --no-rdoc --no-ri
+
+  rbenv rehash
