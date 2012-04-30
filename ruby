@@ -1,4 +1,4 @@
-echo "Installing Ruby 1.9.2 stable and making it the default Ruby ..."
+echo "Installing Ruby 1.9.3 stable and making it the default Ruby ..."
   rbenv install 1.9.3-p125
   rbenv rehash
   rbenv global 1.9.3-p125
