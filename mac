@@ -67,4 +67,4 @@ echo "Installing ruby-build, good for automating ruby installs alongside rbenv .
   brew install ruby-build
 
 curl -Os https://raw.github.com/molawson/laptop/master/ruby ; bash ruby
-curl -Os https://raw.github.com/molawson/laptop/master/heroku ; bash heroku
+# curl -Os https://raw.github.com/molawson/laptop/master/heroku ; bash heroku
