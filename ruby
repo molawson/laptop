@@ -3,6 +3,9 @@ echo "Installing Ruby 1.9.3 stable and making it the default Ruby ..."
   rbenv rehash
   rbenv global 1.9.3-p125
 
+  # I'm not sure why we need this, but the shell doesn't find the new ruby install without it
+  source ~/.bash_profile
+
 echo "Installing pow for serving Rack apps"
   curl get.pow.cx | sh
 
