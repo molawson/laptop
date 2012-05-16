@@ -24,7 +24,9 @@ echo "Installing Git, a good version control system ..."
 
 echo "Installing Postgres, a good open source relational database ..."
   brew install postgres --no-python
-  brew info postgres
+
+echo "Installing MySQL, another good open source relational database ..."
+  brew install mysql
 
 echo "Postgres set up"  
   initdb /usr/local/var/postgres
@@ -52,6 +54,9 @@ echo "Installing QT, used by Capybara Webkit for headless Javascript integration
 echo "Installing Node.js, a good platform for event-driven applications using server side javascript ..."
   brew install node
 
+echo "Installing Node Packagge Manager to manage Node package dependencies ..."
+  curl http://npmjs.org/install.sh | sh
+
 echo "Installing ssh-copy-id, good for copying your ssh key to servers ..."
   brew install ssh-copy-id
 
@@ -68,3 +73,17 @@ echo "Installing ruby-build, good for automating ruby installs alongside rbenv .
 
 curl -Os https://raw.github.com/molawson/laptop/master/ruby ; bash ruby
 # curl -Os https://raw.github.com/molawson/laptop/master/heroku ; bash heroku
+
+echo "Installing vim with Ruby support for use with the Command-T plugin ..."
+  curl -Os https://raw.github.com/molawson/laptop/master/vim.rb ; sudo ruby vim.rb
+
+echo "Cleaning up most of the mess we made ..."
+  rm ruby
+  # rm heroku
+  rm vim.rb
+
+echo "Now you need to setup postgres ..."
+  brew info postgres
+
+echo "Now you need to setup postgres ..."
+  brew info mysql
