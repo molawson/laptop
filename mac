@@ -22,6 +22,9 @@ export PATH='/usr/local/bin:$PATH'" >> ~/.bash_profile
 echo "Installing Git, a good version control system ..."
   brew install git
 
+echo "Installing Hub, a good way to interact with github repos from the cli ..."
+  brew install hub
+
 echo "Installing Postgres, a good open source relational database ..."
   brew install postgres --no-python
 
