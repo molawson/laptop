@@ -7,6 +7,9 @@ echo "Installing Ruby 1.9.3 stable and making it the default Ruby ..."
   source ~/.bash_profile
 
 echo "Installing pow for serving Rack apps"
+  echo 'export POW_DST_PORT=88' >> ~/.powconfig
+  sudo curl https://raw.github.com/gist/1058580/zzz_pow.conf -o /private/etc/apache2/other/zzz_pow.conf
+  sudo apachectl restart
   curl get.pow.cx | sh
 
 echo "Installing the Bundler gem to manange gem dependencies ..."
