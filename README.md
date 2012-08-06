@@ -11,7 +11,7 @@ Before you run this script, you need compilers like GCC, LLVM, and Clang.
 Get them via [OS X GCC Installer](https://github.com/kennethreitz/osx-gcc-installer/)
 if you're on Snow Leopard (OS X 10.6) or
 [Command Line Tools for XCode](https://developer.apple.com/downloads/index.action)
-if you're on Lion (OS X 10.7).
+if you're on Lion or Mountain Lion (OS X 10.7, 10.8).
 
 Run the script:
 
