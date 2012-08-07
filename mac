@@ -39,8 +39,11 @@ if [ $lion == "Y" -o $lion == "y" ] ; then
     curl http://nextmarvel.net/blog/downloads/fixBrewLionPostgres.sh | sh
 fi
 
-echo "Installing Redis, a good key-value database ..."
+echo "Installing Redis, a good key-value store ..."
   brew install redis
+
+echo "Installing MongoDB, a good document-based data store ..."
+  brew install mongodb
 
 echo "Installing ack, a good way to search through files ..."
   brew install ack
@@ -86,5 +89,8 @@ echo "Cleaning up most of the mess we made ..."
 echo "Now you need to setup postgres ..."
   brew info postgres
 
-echo "Now you need to setup postgres ..."
+echo "Now you need to setup mysql ..."
   brew info mysql
+
+echo "Now you need to setup mongo ..."
+  brew info mongodb
