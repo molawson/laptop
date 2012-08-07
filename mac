@@ -108,6 +108,6 @@ echo "Now you need to setup mongo ...\n"
   brew info mongodb
 pause "Press [Enter] to continue: "
 
-echo "\n*******************"
-echo "***  All done!  ***"
-echo "*******************\n"
+echo "\n-----------------------------"
+echo "All done here. Happy hacking!"
+echo "-----------------------------\n"
