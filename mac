@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+
+# utility function for pausing the script at any point
+# and waiting for user input to continue
+function pause(){
+  echo ""
+  read -p "$*"
+  echo ""
+}
+
+
 read -p "Is this computer running OSX Lion (10.7)? [y/n] " lion
 
 echo "Checking for SSH key, generating one if it doesn't exist ..."
@@ -86,11 +96,18 @@ echo "Cleaning up most of the mess we made ..."
   rm ruby
   rm vim.rb
 
-echo "Now you need to setup postgres ..."
+echo "Now you need to setup postgres ...\n"
   brew info postgres
+pause "Press [Enter] to continue: "
 
-echo "Now you need to setup mysql ..."
+echo "Now you need to setup mysql ...\n"
   brew info mysql
+pause "Press [Enter] to continue: "
 
-echo "Now you need to setup mongo ..."
+echo "Now you need to setup mongo ...\n"
   brew info mongodb
+pause "Press [Enter] to continue: "
+
+echo "\n*******************"
+echo "***  All done!  ***"
+echo "*******************\n"
