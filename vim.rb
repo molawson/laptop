@@ -8,7 +8,7 @@ def newblock string
     puts "\n#{Star}#{string}#{Star}\n"
 end
 
-default_ruby = "1.9.3-p125"
+default_ruby = "1.9.3-p194"
 
 newblock "compiling with system ruby"
 system "rbenv global system"
