@@ -75,14 +75,12 @@ echo "Installing ruby-build, good for automating ruby installs alongside rbenv .
   brew install ruby-build
 
 curl -Os https://raw.github.com/molawson/laptop/master/ruby ; bash ruby
-# curl -Os https://raw.github.com/molawson/laptop/master/heroku ; bash heroku
 
 echo "Installing vim with Ruby support for use with the Command-T plugin ..."
   curl -Os https://raw.github.com/molawson/laptop/master/vim.rb ; sudo ruby vim.rb
 
 echo "Cleaning up most of the mess we made ..."
   rm ruby
-  # rm heroku
   rm vim.rb
 
 echo "Now you need to setup postgres ..."
