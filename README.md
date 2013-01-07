@@ -34,7 +34,7 @@ What it sets up
 * Qt (used by Capybara Webkit for headless JavaScript testing)
 * Node.js (for event based applications)
 * Ssh-copy-id (for copying ssh keys to servers)
-* Rbenv and Ruby-Build (for managing versions of the Ruby programming language)
+* Rbenv, rbenv-vars, and ruby-build (for managing versions of the Ruby programming language)
 * Ruby language (for writing general-purpose code)
 * Pow (for serving your Rails app locally)
 * Bundler gem (for managing Ruby libraries)
