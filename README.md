@@ -34,6 +34,7 @@ What it sets up
 * Qt (used by Capybara Webkit for headless JavaScript testing)
 * Node.js (for event based applications)
 * Ssh-copy-id (for copying ssh keys to servers)
+* Vim with Ruby support (for code editing and compatibility with the Command-T plugin)
 * Rbenv, rbenv-vars, and ruby-build (for managing versions of the Ruby programming language)
 * Ruby language (for writing general-purpose code)
 * Pow (for serving your Rails app locally)
@@ -43,6 +44,5 @@ What it sets up
 * Postgres gem (for making Ruby talk to SQL databases)
 * Git Remote Branch gem (for faster git branch creation and deletion)
 * Cloudapp gem (for sharing links and files from the command line)
-* Vim with Ruby support (for code editing and compatibility with the Command-T plugin)
 
 It should take about 30 minutes for everything to install, depending on your machine.

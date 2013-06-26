@@ -75,6 +75,9 @@ echo "Installing Node Packagge Manager to manage Node package dependencies ..."
 echo "Installing ssh-copy-id, good for copying your ssh key to servers ..."
   brew install ssh-copy-id
 
+echo "Installing vim (with Ruby support), a good text editor ..."
+  brew install vim
+
 echo "Installing rbenv, a good ruby version manager ..."
   brew install rbenv
 
@@ -91,12 +94,8 @@ echo "Installing ruby-build, good for automating ruby installs alongside rbenv .
 
 curl -Os https://raw.github.com/molawson/laptop/master/ruby ; bash ruby
 
-echo "Installing vim with Ruby support for use with the Command-T plugin ..."
-  curl -Os https://raw.github.com/molawson/laptop/master/vim.rb ; sudo ruby vim.rb
-
 echo "Cleaning up most of the mess we made ..."
   rm ruby
-  rm vim.rb
 
 echo "Now you need to setup postgres ...\n"
   brew info postgres
