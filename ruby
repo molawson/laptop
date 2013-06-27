@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-echo "Installing Ruby 1.9.3 stable and making it the default Ruby ..."
-  rbenv install 1.9.3-p194
+echo "Installing Ruby 2.0.0 stable and making it the default Ruby ..."
+  rbenv install 2.0.0-p195
   rbenv rehash
-  rbenv global 1.9.3-p194
+  rbenv global 2.0.0-p195
 
   # I'm not sure why we need this, but the shell doesn't find the new ruby install without it
   source ~/.bash_profile
