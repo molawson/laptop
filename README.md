@@ -29,7 +29,7 @@ What it sets up
 * MongoDB (for storing document-based data)
 * Redis (for storing key-value data)
 * Memcached (for caching objects in memory)
-* Ack (for finding things in files)
+* The Silver Searcher (for finding things in files)
 * Tmux (for saving project state and switching between projects)
 * ImageMagick (for cropping and resizing images)
 * Qt (used by Capybara Webkit for headless JavaScript testing)
