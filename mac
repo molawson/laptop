@@ -34,6 +34,12 @@ echo "Installing Git, a good version control system ..."
 echo "Installing Hub, a good way to interact with github repos from the cli ..."
   brew install hub
 
+echo "Installing ssh-copy-id, good for copying your ssh key to servers ..."
+  brew install ssh-copy-id
+
+echo "Installing vim (with Ruby support), a good text editor ..."
+  brew install vim
+
 echo "Installing Postgres, a good open source relational database ..."
   brew install postgres --no-python
 
@@ -74,12 +80,6 @@ echo "Installing Node.js, a good platform for event-driven applications using se
 
 echo "Installing Node Package Manager to manage Node package dependencies ..."
   curl https://npmjs.org/install.sh | sh
-
-echo "Installing ssh-copy-id, good for copying your ssh key to servers ..."
-  brew install ssh-copy-id
-
-echo "Installing vim (with Ruby support), a good text editor ..."
-  brew install vim
 
 echo "Installing rbenv, a good ruby version manager ..."
   brew install rbenv
