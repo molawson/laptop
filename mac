@@ -54,6 +54,9 @@ echo "Installing Redis, a good key-value store ..."
 echo "Installing MongoDB, a good document-based data store ..."
   brew install mongodb
 
+echo "installing Memcached, a good memory object caching system ..."
+  brew install memcached
+
 echo "Installing ack, a good way to search through files ..."
   brew install ack
 
@@ -105,8 +108,16 @@ echo "Now you need to setup mysql ...\n"
   brew info mysql
 pause "Press [Enter] to continue: "
 
-echo "Now you need to setup mongo ...\n"
+echo "Now you need to setup mongodb ...\n"
   brew info mongodb
+pause "Press [Enter] to continue: "
+
+echo "Now you need to setup redis ...\n"
+  brew info redis
+pause "Press [Enter] to continue: "
+
+echo "Now you need to setup memcached ...\n"
+  brew info memcached
 pause "Press [Enter] to continue: "
 
 echo "\n-----------------------------"
