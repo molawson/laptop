@@ -69,8 +69,8 @@ echo "Installing QT, used by Capybara Webkit for headless Javascript integration
 echo "Installing Node.js, a good platform for event-driven applications using server side javascript ..."
   brew install node
 
-echo "Installing Node Packagge Manager to manage Node package dependencies ..."
-  curl http://npmjs.org/install.sh | sh
+echo "Installing Node Package Manager to manage Node package dependencies ..."
+  curl https://npmjs.org/install.sh | sh
 
 echo "Installing ssh-copy-id, good for copying your ssh key to servers ..."
   brew install ssh-copy-id
